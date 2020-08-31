@@ -57,5 +57,13 @@ class CourseRepositoryTest {
 		assertEquals("Hibernate-with-Jpa - updated",course1.getName());
 		
 	}
+	
+	@Test
+	@DirtiesContext
+	public void playWithEntityManager_basic() {
+		
+		 repository.playWithEntityManager();
+		
+	}
 
 }
