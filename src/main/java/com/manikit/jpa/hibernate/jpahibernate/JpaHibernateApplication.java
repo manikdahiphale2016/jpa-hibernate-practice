@@ -25,12 +25,13 @@ public class JpaHibernateApplication implements CommandLineRunner{
 	@Override
 	public void run(String... args) throws Exception {
 
-		Course course = courseRepository.findById(10001L);
-		
-		logger.info("Course -> {} ",course);
-		
-		courseRepository.save(new Course("SpringMicroservices in 100 steps"));
-		
+		/*
+		 * Course course = courseRepository.findById(10001L);
+		 * 
+		 * logger.info("Course -> {} ",course);
+		 * 
+		 * courseRepository.save(new Course("SpringMicroservices in 100 steps"));
+		 */
 		//courseRepository.deleteById(10002L);
 	}
 
